@@ -124,17 +124,17 @@ def make_list_of_all_labeled_sentences(data_dic):
 
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 
-def calculate_results(y_true, y_pred):
+
+  # Calculate model accuracy
+
+def accuracy_of_model(y_true,y_pred):
   """
-  accuracy, precision, recall and f1 score of a binary classification model.
+
 
   Args:
       y_true: true labels in the form of a 1D array
       y_pred: predicted labels in the form of a 1D array
-
-  Returns a dictionary of accuracy, precision, recall, f1-score.
   """
-  # Calculate model accuracy
   model_accuracy = accuracy_score(y_true, y_pred) * 100
   # Calculate model precision, recall and f1 score using "weighted average
   model_precision, model_recall, model_f1, _ = precision_recall_fscore_support(y_true, y_pred, average="weighted")
