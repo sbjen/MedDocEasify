@@ -1,3 +1,6 @@
 
 data/pubmed-rct-master/PubMed_200k_RCT/train.7z
 data/pubmed-rct-master
+data/use/variables/variables.index
+data/use/variables/variables.data-00000-of-00001
+data/use/saved_model.pb
