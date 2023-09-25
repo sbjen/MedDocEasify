@@ -1,22 +1,27 @@
-import React from 'react';
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-function Input() {
-  return (
-    <div id="input-box" className="">
+function Input({ text, flag }) {
+  return flag % 2 === 1 ? (
+    <div id="input-box" className="container">
       <Container flex className=''>
-          <Row className= " justify-content-center align-items-center">
-            <Col  md={7}>
-              <div>fd fdf</div>
+          <Row className= "">
+            <Col>
+            test col 1
             </Col>
-            <Col md={7}>
-              <div>
-                <p>testing input box col2</p>
+
+            <Col>
+                          <div>
+                <p>{text}</p>
               </div>
+
             </Col>
           </Row>
       </Container>
+
     </div>
+  ) : (
+    ""
   );
 }
 

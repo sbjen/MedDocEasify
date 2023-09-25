@@ -1,22 +1,14 @@
-import {Container,Row,Col} from 'react-bootstrap'
-import React from 'react';
+import { Container, Row, Col } from "react-bootstrap";
+import React from "react";
 
-function Output() {
-    return (
-      <div id="output-box" className="full-width ">
-        <p>
-            Output box text 
-        </p>
-      
-  
-      </div>
-      
-  
-    );
-  }
-  
-  export default Output;
+function Output({ text, flag }) {
+  return flag % 2 === 0 ? (
+    <div id="output-box" className="full-width ">
+      <p>{text}</p>
+    </div>
+  ) : (
+    ""
+  );
+}
 
-  
-  
-  
+export default Output;
