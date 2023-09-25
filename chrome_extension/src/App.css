@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -11,9 +11,9 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,17 +22,111 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+.bg-openai {
+  background-color: rgb(52, 53, 65);
+}
+.min-height-vph {
+  min-height: 100vh;
+}
+.bg-color-inherit {
+  background-color: inherit;
+}
+.full-width {
+  width: 100vw;
+}
+#input-box {
+  background-color: rgb(68, 70, 84) !important;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+#output-box {
+  background-color: inherit !important;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#input-div {
+  bottom: 0;
+  border: 10px solid palevioletred;
+
+  position: fixed;
+
+  width: 100%;
+  min-height: 16vh;
+  padding: "10px";
+  background-color: red;
+
+  text-align: center; /* Center content horizontally */
+  background: linear-gradient(to top, rgba(52, 53, 65, 1) , rgba(52, 53, 65, 1) , rgba(52, 53, 65, 0.2));
+
+  /* max-height: 40vh; */
+  height: fit-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#output-div {
+  border: 10px solid palevioletred;
+
+  bottom: 0 !important;
+  left: 0;
+  width: "100%";
+  background: "rgba(255, 255, 255, 0.8)";
+  padding: "10px";
 }
+
+.boundry-green {
+  border: 10px solid green;
+}
+.boundry-yellow {
+  border: 10px solid yellow;
+}
+.boundry-blue {
+  border: 10px solid blue;
+}
+#home {
+  height: 100vh;
+  border: 10px solid blue;
+}
+.input-field{
+  /* style={{width:"60vw", height:"40px",fontSize:"20px",backgroundColor:"rgb(64,65,79)",border:"0px solid black" */
+    margin-top: 20px;
+    position: absolute;
+    border-radius: 20px;
+  
+    /* max-height: 35vh !important; */
+    font-size: 20px !important;
+    min-width: 60vw;
+    border-radius: "10px";
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(64,65,79) !important;
+    border: 0px ;
+    /* border-radius: 10px !important; */
+    box-shadow: 10px !important;
+    color: rgb(209,213,219) !important;
+  
+ 
+
+
+padding-left: "20px";
+    border: none;
+    outline: none;
+    resize: vertical; /* Disable textarea resizing */
+
+    /* position: absolute; */
+    bottom: 20px;
+   
+    
+
+}
+.text-area-container{
+  display: flex;
+  flex-direction: column; /* Optional: To center vertically as well */
+  align-items: center;
+  justify-content: center;
+}
+
+
