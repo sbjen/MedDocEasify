@@ -118,7 +118,9 @@ def make_list_of_all_labeled_sentences(data_dic):
     for index in range(len(data_dic) - 1):
 
         for line in range(data_dic[index]["total_lines"]):
-            dev_deta_lines.append(data_dic[index]["entire_para"][line])
+          obj = data_dic[index]["entire_para"][line]
+          obj["total_lines"] = data_dic[index]["total_lines"]
+          dev_deta_lines.append(obj)
 
     return dev_deta_lines
 
