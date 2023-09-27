@@ -24,18 +24,21 @@ function Home() {
   ]);
 
   const handleInputChange = (event) => {
-    setInputData(event.target.value);
+    const text = event.target.value;
+    setInputData(text);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Form data submitted:", inputData);
-
+    console.log("Form data submitted:", (String)(inputData));
+    
+    // const text = inputData.Replace("\r\n", "<br />\r\n");
+    const text = inputData;
     setCards([
       ...cards,
       {
         id: count,
-        text: inputData,
+        text: text,
       },
     ]);
     setInputData("");
@@ -46,6 +49,14 @@ function Home() {
   return (
     <section>
       <div id="home" className="container">
+      <div id="extra-20"></div>
+        <div id="nav">
+          <div>
+
+          MedDocEasify
+          </div>
+          
+        </div>
         <div id="output-div">
           <div>
             {/* <ul> */}
@@ -67,6 +78,7 @@ function Home() {
           <div className="text-area-container">
             <div className="input-field align-self-center">
               <Textarea
+                multiline
                 onChange={handleInputChange}
                 name="text"
                 value={inputData}
@@ -109,6 +121,8 @@ function Home() {
           {/* </Row>
           </Container> */}
         </div>
+
+        <div id="extra"></div>
       </div>
     </section>
   );

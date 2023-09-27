@@ -59,7 +59,7 @@ def test():
     paragraph = data['payload']
     print(data[paragraph])
 
-    ## perforom model prediction and return ouput text 
+    ## perforom model prediction and return ouput text
 
 
 
