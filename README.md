@@ -1,4 +1,7 @@
 
+### MedDocEasify 
+#### Backed by model trained on 2 lakh medical articles
+
 #### Transform Heavy Text Boring Medical Blogs/Documents into pretty easy reading text
   * Goal:
     1. is to create a sequential classification model to extract context from Blog/Docs (Done)
@@ -8,3 +11,5 @@
     5. React App (Done) 
     6. chrome extension 
  
+
+
