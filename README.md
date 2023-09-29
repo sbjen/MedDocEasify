@@ -1,6 +1,6 @@
 
 ### MedDocEasify 
-#### Backed by model trained on 2 lakh medical articles
+#### Backed by deep sequence NLP model trained on 2 lakh medical abstract articles
 
 #### Transform Heavy Text Boring Medical Blogs/Documents into pretty easy reading text
   * Goal:
