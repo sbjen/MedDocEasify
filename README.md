@@ -9,7 +9,10 @@
     3. for 1st layer we are replicating Model proposed in paper [2017 PubMed 200k RCT](https://arxiv.org/abs/1710.06071 (Done)
     4. model deployment Locally Flask APi (Done)
     5. React App (Done) 
-    6. chrome extension 
+    6. chrome extension
+
+#### Stage One Result - Context Extraction Results
+https://github.com/s-brajendra/MedDocEasify/blob/main/data/trash/med_doc_stage1.gif
  
 
 
