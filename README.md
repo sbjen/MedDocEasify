@@ -11,7 +11,7 @@
     5. React App (Done) 
     6. chrome extension
 
-#### Stage One Result - Context Extraction Results
+#### Stage One Result - Context Extraction
 
 ![med_doc_stage1](https://github.com/s-brajendra/MedDocEasify/assets/80635193/e2210028-0cd7-4d37-bd93-a9c67588b815)
 
