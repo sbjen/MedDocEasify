@@ -6,7 +6,9 @@ import user from '../assets/user.png';
 
 function NewlineText(props) {
   const text = props;
-  const newText = text.split("\n").map((str) => <p>{str}</p>);
+  const newText = text.split("\n").map(
+    (str) => <p>{str}</p>
+    );
 
   return newText;
 }
@@ -21,7 +23,10 @@ function Input({ text, flag }) {
 
              </p>
         </div>
-        <div id="input-box-text" className="">{NewlineText(text)}</div>
+        <div id="input-box-text" className="">
+          
+          {NewlineText(text)}
+          </div>
       </div>
     </div>
   ) : (

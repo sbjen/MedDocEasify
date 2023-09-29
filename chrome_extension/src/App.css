@@ -175,6 +175,10 @@
   align-items: center;
   justify-content: center;
 }
+.text-area:focus{
+  border: 0px solid wheat !important;
+
+}
 
 @media (max-width: 768px) {
   #output-box-div {

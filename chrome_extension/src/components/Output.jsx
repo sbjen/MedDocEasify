@@ -1,11 +1,34 @@
-import { Container, Row, Col } from "react-bootstrap";
+// import { Container, Row, Col } from "react-bootstrap";
 import React from "react";
-import med from '../assets/med.png';
-
+import med from "../assets/med.png";
 
 function NewlineText(props) {
   const text = props;
-  const newText = text.split("\n").map((str) => <p>{str}</p>);
+  const output_class_name = ['Outline the significance of this medical article. :', 'primary aim of this medical article:','Approaches employed:','Implications from the medical study:', 'Key takeaways from the medical article:'  ]
+  const test = ['Outline', 'primary','Approaches','Implications', 'Key'  ]
+  
+
+  const newText = text.split("\n").map((str) => (
+    <span>
+      
+     
+      {test.includes(str.split(" ")[0]) ? (
+        <p>
+          {console.log(str)}
+          <h3>
+
+          <b>{str}</b>
+          </h3>
+        </p>
+      ) : (
+        ""
+      )}
+    
+      {!test.includes(str.split(" ")[0]) ? <p>{str}</p> : ""}
+
+      {/* <p>{str}</p> */}
+    </span>
+  ));
 
   return newText;
 }
