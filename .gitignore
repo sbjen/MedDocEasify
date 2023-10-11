@@ -13,3 +13,8 @@ saved-models/90_percent_model_2_lakh_para/keras_metadata.pb
 saved-models/90_percent_model_2_lakh_para/variables/variables.data-00000-of-00001
 saved-models/90_percent_model_2_lakh_para/saved_model.pb
 saved-models/90_percent_model_2_lakh_para/variables/variables.index
+api/model_checkpoints/90_percent_model_2_lakh_para/variables/variables.index
+api/model_checkpoints/90_percent_model_2_lakh_para/variables/variables.data-00000-of-00001
+api/model_checkpoints/90_percent_model_2_lakh_para/saved_model.pb
+api/model_checkpoints/90_percent_model_2_lakh_para/keras_metadata.pb
+api/model_checkpoints/90_percent_model_2_lakh_para/fingerprint.pb

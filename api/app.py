@@ -10,7 +10,7 @@ from flask import Flask,request,jsonify
 from flask_cors import CORS
 from flask_cors import cross_origin
 
-trained_model = keras.models.load_model("../saved-models/90_percent_model_2_lakh_para")
+trained_model = keras.models.load_model("./model_checkpoints/90_percent_model_2_lakh_para")
 
 
 # random_med_para = 'This RCT examined the efficacy of a manualized social intervention for children with HFASDs. Participants were randomly assigned to treatment or wait-list conditions. Treatment included instruction and therapeutic activities targeting social skills, face-emotion recognition, interest expansion, and interpretation of non-literal language. A response-cost program was applied to reduce problem behaviors and foster skills acquisition. Significant treatment effects were found for five of seven primary outcome measures (parent ratings and direct child measures). Secondary measures based on staff ratings (treatment group only) corroborated gains reported by parents. High levels of parent, child and staff satisfaction were reported, along with high levels of treatment fidelity. Standardized effect size estimates were primarily in the medium and large ranges and favored the treatment group.'
